@@ -10,4 +10,4 @@ end
 gem "ffi", "< 1.17.0"
 
 # also for older rubygems in netlifly
-gem "sass-embedded", "< 1.63.6"
+gem "jekyll-sass-converter", "~> 2.0
