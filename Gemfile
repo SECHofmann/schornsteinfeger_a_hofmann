@@ -8,3 +8,6 @@ end
 
 # https://github.com/ffi/ffi/issues/1103
 gem "ffi", "< 1.17.0"
+
+# also for older rubygems in netlifly
+gem "sass-embedded", "< 1.63.6"
