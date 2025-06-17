@@ -6,12 +6,12 @@ description: Diese Seite befindet sich im Aufbau. Bitte haben Sie noch etwas Ged
 baseurl: # the subpath of your site, e.g. /blog
 url: schronsteinfegermeister-hofmann.de # the base hostname & protocol for your site, e.g. http://example.com
 author:
-street_address: 1234 Somewhere Road
-city: Nashville
-state: TN
-zip_code: 55555
-country: United States of America
-phone: (716) 555-5555
+street_address: Heideweg 8
+city: Eckartsberga
+state: Sachsen-Anhalt
+zip_code: 06648
+country: Deutschland
+phone: +49 34467 / 408041
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
