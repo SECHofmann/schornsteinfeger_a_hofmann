@@ -2,18 +2,24 @@
 <section id="contact">
 	<div class="inner">
 		<section>
-			<form action="https://formspree.io/{{ site.email }}" method="POST">
+			<form id="contactForm" action="https://formspree.io/f/xrbklpgw" method="POST">
+				<div id="successMessage" style="display: none; color: #47D3E5; margin-bottom: 20px; padding: 15px; border: 1px solid #47D3E5; text-align: center;">
+					Ihre Nachricht wurde erfolgreich gesendet!
+				</div>
+				<div id="errorMessage" style="display: none; color: #ff6363; margin-bottom: 20px; padding: 15px; border: 1px solid #ff6363; text-align: center;">
+					Es gab einen Fehler beim Senden. Bitte versuchen Sie es erneut.
+				</div>
 				<div class="field half first">
 					<label for="name">Name</label>
-					<input type="text" name="name" id="name" />
+					<input type="text" name="name" id="name" required/>
 				</div>
 				<div class="field half">
 					<label for="email">E-mail</label>
-					<input type="text" name="_replyto" id="email" />
+					<input type="email" name="_replyto" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/>
 				</div>
 				<div class="field">
 					<label for="message">Nachricht</label>
-					<textarea name="message" id="message" rows="6"></textarea>
+					<textarea name="message" id="message" rows="6" required></textarea>
 				</div>
 				<ul class="actions">
 					<li><input type="submit" value="Absenden" class="special" /></li>
@@ -62,3 +68,4 @@
 		</section>
 	</div>
 </section>
+<script src="assets/js/contact-form.js"></script>
