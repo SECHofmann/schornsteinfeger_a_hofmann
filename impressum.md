@@ -1,7 +1,6 @@
 ---
 layout: impressum
 title: Impressum
-nav-menu: true
 ---
 
 # Impressum
