@@ -60,6 +60,12 @@
 					background-color: desaturate(darken(_palette(highlight), 15), 5);
 				}
 			}
+
+			.header-subtitle {
+				@include breakpoint(small) {
+					display: none;
+				}
+			}
 		}
 
 		nav {

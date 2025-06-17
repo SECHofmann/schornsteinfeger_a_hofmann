@@ -8,15 +8,15 @@ nav-menu: true
 
 **Andreas Hofmann**  
 Schornsteinfegermeister  
-Heideweg 8  
-06648 Eckartsberga  
+{{ site.street_address }}  
+{{ site.zip_code }} {{ site.city }}  
 
 ---
 
 ## Kontakt
 
-**Telefon:** 034467408041  
-**E-Mail:** info@schornsteinfegermeister-hofmann.de  
+**Telefon:** {{ site.phone }}  
+**E-Mail:** {{ site.email }}
 
 ---
 
@@ -34,10 +34,8 @@ Ernst-Kamieth-Straße 2
 Deutschland/Sachsen  
 
 **Es gelten folgende berufsrechtliche Regelungen:**  
-- Schornsteinfeger-Handwerksgesetz  
-  [Einsehbar hier](https://mwl.sachsen-anhalt.de/wirtschaft/wirtschaftsordnung/schornsteinfegerwesen)  
-- Handwerksordnung  
-  [Einsehbar hier](https://www.hwkhalle.de/rechtsgrundlagen/)  
+- [Schornsteinfeger-Handwerksgesetz](https://mwl.sachsen-anhalt.de/wirtschaft/wirtschaftsordnung/schornsteinfegerwesen)  
+- [Handwerksordnung](https://www.hwkhalle.de/rechtsgrundlagen/)  
 
 ---
 
