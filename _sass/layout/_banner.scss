@@ -14,7 +14,8 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		border-bottom: 0 !important;
-		cursor: default;		height: 100vh;
+		cursor: default;		
+		height: 100vh;
 		min-height: 100vh;
 		max-height: 100vh;
 		display: flex;
@@ -42,6 +43,7 @@
 		h1 {
 			font-size: 3.25em;
 		}
+		
 		> .inner {
 			@include vendor('transition', (
 				'opacity 1.5s ease',
@@ -92,6 +94,7 @@
 				}
 			}
 		}
+
 		&.major {
 			height: 100vh;
 			min-height: 100vh;
@@ -124,8 +127,9 @@
 		@include breakpoint(large) {
 			background-attachment: scroll;
 		}
+
+
 		@include breakpoint(small) {
-			@include padding(3em, 0, (2em, 0, 0, 0));
 			height: 100vh;
 			min-height: 100vh;
 			max-height: 100vh;
@@ -145,17 +149,12 @@
 						margin-bottom: _size(element-margin);
 					}
 				}
-			}
-
-			&.major {
-				height: auto;
-				min-height: 0;
-				max-height: none;
-			}
+			}			
+			
+			
 		}
 
 		@include breakpoint(xsmall) {
-			@include padding(4em, 0, (2em, 0, 0, 0));
 
 			> .inner {
 				.content {
@@ -165,10 +164,11 @@
 						}
 					}
 				}
-			}
-
+			}			
+			
 			&.major {
-				@include padding(6em, 0, (2em, 0, 0, 0));
+				height: 100vh !important;
+				min-height: 100vh !important;
 			}
 		}
 	}

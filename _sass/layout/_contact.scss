@@ -10,6 +10,28 @@
 		border-bottom: solid 1px _palette(border);
 		overflow-x: hidden;
 
+		.contact-method {
+			.phone-numbers {
+				display: grid;
+				grid-template-columns: 5em 1fr;
+				gap: 0.5em;
+				
+				span {
+					color: inherit;
+				}
+
+				a {
+					display: inline-block;
+					width: fit-content;
+				}
+
+				@include breakpoint(small) {
+					grid-template-columns: 4.5em 1fr;
+					gap: 0.3em;
+				}
+			}
+		}
+
 		> .inner {
 			@include vendor('display', 'flex');
 			padding: 0 !important;
@@ -48,6 +70,23 @@
 					&:before {
 						display: none;
 					}
+				}
+			}
+		}
+
+		.contact-method {
+			.phone-numbers {
+				display: grid;
+				grid-template-columns: 5em auto;
+				gap: 0.5em;
+
+				span {
+					color: inherit;
+				}
+
+				@include breakpoint(small) {
+					grid-template-columns: 4.5em auto;
+					gap: 0.3em;
 				}
 			}
 		}

@@ -11,7 +11,8 @@ city: Eckartsberga
 state: Sachsen-Anhalt
 zip_code: 06648
 country: Deutschland
-phone: +49 34467 / 408041
+phone: +49 34467 408041
+mobile: +49 1573 7744134
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
