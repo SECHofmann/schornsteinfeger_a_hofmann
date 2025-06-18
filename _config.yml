@@ -3,8 +3,8 @@ title: Schornsteinfegermeister Hofmann
 subtitle: in Eckartsberga
 email: info@schornsteinfegermeister-hofmann.de
 description: Diese Seite befindet sich im Aufbau. Bitte haben Sie noch etwas Geduld.
-baseurl: # the subpath of your site, e.g. /blog
-url: schronsteinfegermeister-hofmann.de # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: https://schornsteinfegermeister-hofmann.de # the base hostname & protocol for your site
 author:
 street_address: Heideweg 8
 city: Eckartsberga
