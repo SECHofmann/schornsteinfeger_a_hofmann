@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Home
-landing-title: 'Hallo, ich bin Andreas Hofmann'
+landing-title: 'Hallo und herzlich willkommen bei Ihrem Schornsteinfegermeister Andreas Hofmann.'
 description: 'Hier sind sie auf der Seite des Schornsteinfegermeisters!'
 image: null
 author: null

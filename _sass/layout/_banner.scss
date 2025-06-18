@@ -6,23 +6,22 @@
 
 /* Banner */
 
-	#banner {
-		@include vendor('align-items', 'center');
+	#banner {		@include vendor('align-items', 'flex-start');
 		@include vendor('background-image', 'url("../images/banner.jpg")');
 		@include vendor('display', 'flex');
-		@include padding(4em, 0, (2em, 0, 0, 0));
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		border-bottom: 0 !important;
-		cursor: default;
-		height: 60vh;
-		margin-bottom: -3.25em;
-		max-height: 32em;
-		min-height: 22em;
+		cursor: default;		height: 100vh;
+		min-height: 100vh;
+		max-height: 100vh;
+		display: flex;
+		align-items: center;
 		position: relative;
-		top: -3.25em;
+		margin-bottom: 0;
+		top: 0;
 
 		&:after {
 			@include vendor('transition', 'opacity #{_duration(banner)} ease');
@@ -43,7 +42,6 @@
 		h1 {
 			font-size: 3.25em;
 		}
-
 		> .inner {
 			@include vendor('transition', (
 				'opacity 1.5s ease',
@@ -54,6 +52,7 @@
 			padding: 0 !important;
 			position: relative;
 			z-index: 2;
+			margin-top: 2em;
 
 			.image {
 				display: none;
@@ -93,11 +92,10 @@
 				}
 			}
 		}
-
 		&.major {
-			height: 75vh;
-			min-height: 30em;
-			max-height: 50em;
+			height: 100vh;
+			min-height: 100vh;
+			max-height: 100vh;
 
 			&.alt {
 				  opacity: 0.75;
@@ -126,14 +124,13 @@
 		@include breakpoint(large) {
 			background-attachment: scroll;
 		}
-
 		@include breakpoint(small) {
 			@include padding(3em, 0, (2em, 0, 0, 0));
-			height: auto;
-			margin-bottom: -2.75em;
-			max-height: none;
-			min-height: 0;
-			top: -2.75em;
+			height: 100vh;
+			min-height: 100vh;
+			max-height: 100vh;
+			margin-bottom: 0;
+			top: 0;
 
 			h1 {
 				font-size: 2em;
