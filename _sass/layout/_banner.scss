@@ -6,7 +6,8 @@
 
 /* Banner */
 
-	#banner {		@include vendor('align-items', 'flex-start');
+	#banner {		
+		@include vendor('align-items', 'flex-start');
 		@include vendor('background-image', 'url("../images/banner.jpg")');
 		@include vendor('display', 'flex');
 		background-attachment: fixed;
@@ -93,6 +94,7 @@
 				}
 			}
 		}
+		
 		&.major {
 			height: 100dvh;
 			min-height: 100dvh;
