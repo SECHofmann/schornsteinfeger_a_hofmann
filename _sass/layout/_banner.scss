@@ -127,19 +127,27 @@
 			background-attachment: scroll;
 		}
 
-		@include breakpoint(small) {
+		@include breakpoint(small) {		
 			height: calc(100dvh - var(--header-height, 3.25em));
 			min-height: calc(100dvh - var(--header-height, 3.25em));
 			margin-bottom: 0;
 			top: 0;
 
+			> .inner {
+				padding-top: calc(var(--header-height, 3.25em) + 4em) !important;
+				
+				@media screen and (orientation: landscape) {
+					padding-top: calc(var(--header-height, 3.25em) + 3em) !important;
+				}
+			}
+
 			h1 {
 				font-size: 2em;
 			}
 
-			> .inner {
-				.content {
+			> .inner {				.content {
 					display: block;
+					padding-bottom: 2em; /* Add safe bottom padding */
 
 					> * {
 						margin-left: 0;
