@@ -42,18 +42,20 @@
 		h1 {
 			font-size: 3.25em;
 		}
-		
-		> .inner {
+				> .inner {
 			@include vendor('transition', (
 				'opacity 1.5s ease',
 				'transform 0.5s ease-out',
 				'filter 0.5s ease',
 				'-webkit-filter 0.5s ease'
 			));
-			padding: 0 !important;
 			position: relative;
 			z-index: 2;
-			margin-top: 2em;
+			padding: calc(var(--header-height, 3.25em) + 2em) 0 0 0 !important;
+
+			@media screen and (orientation: landscape) {
+				padding-top: calc(var(--header-height, 3.25em) + 1em) !important;
+			}
 
 			.image {
 				display: none;
@@ -125,9 +127,9 @@
 			background-attachment: scroll;
 		}
 
-
-		@include breakpoint(small) {			height: 100dvh;
-			min-height: 100dvh;
+		@include breakpoint(small) {
+			height: calc(100dvh - var(--header-height, 3.25em));
+			min-height: calc(100dvh - var(--header-height, 3.25em));
 			margin-bottom: 0;
 			top: 0;
 
