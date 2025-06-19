@@ -14,10 +14,9 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		border-bottom: 0 !important;
-		cursor: default;		
-		height: 100vh;
-		min-height: 100vh;
-		max-height: 100vh;
+		cursor: default;						
+		height: 100dvh;
+		min-height: 100dvh;
 		display: flex;
 		align-items: center;
 		position: relative;
@@ -94,11 +93,9 @@
 				}
 			}
 		}
-
 		&.major {
-			height: 100vh;
-			min-height: 100vh;
-			max-height: 100vh;
+			height: 100dvh;
+			min-height: 100dvh;
 
 			&.alt {
 				  opacity: 0.75;
@@ -129,10 +126,8 @@
 		}
 
 
-		@include breakpoint(small) {
-			height: 100vh;
-			min-height: 100vh;
-			max-height: 100vh;
+		@include breakpoint(small) {			height: 100dvh;
+			min-height: 100dvh;
 			margin-bottom: 0;
 			top: 0;
 
@@ -166,9 +161,9 @@
 				}
 			}			
 			
-			&.major {
-				height: 100vh !important;
-				min-height: 100vh !important;
+			&.major {				
+				height: 100dvh !important;
+				min-height: 100dvh !important;
 			}
 		}
 	}
