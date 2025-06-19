@@ -42,20 +42,18 @@
 		h1 {
 			font-size: 3.25em;
 		}
-				> .inner {
+		
+		> .inner {
 			@include vendor('transition', (
 				'opacity 1.5s ease',
 				'transform 0.5s ease-out',
 				'filter 0.5s ease',
 				'-webkit-filter 0.5s ease'
 			));
+			padding: 0 !important;
 			position: relative;
 			z-index: 2;
-			padding: calc(var(--header-height, 3.25em) + 2em) 0 0 0 !important;
-
-			@media screen and (orientation: landscape) {
-				padding-top: calc(var(--header-height, 3.25em) + 1em) !important;
-			}
+			margin-top: 2em;
 
 			.image {
 				display: none;
@@ -127,27 +125,20 @@
 			background-attachment: scroll;
 		}
 
-		@include breakpoint(small) {		
-			height: calc(100dvh - var(--header-height, 3.25em));
-			min-height: calc(100dvh - var(--header-height, 3.25em));
+
+		@include breakpoint(small) {			
+			height: 100dvh;
+			min-height: 100dvh;
 			margin-bottom: 0;
 			top: 0;
-
-			> .inner {
-				padding-top: calc(var(--header-height, 3.25em) + 4em) !important;
-				
-				@media screen and (orientation: landscape) {
-					padding-top: calc(var(--header-height, 3.25em) + 3em) !important;
-				}
-			}
 
 			h1 {
 				font-size: 2em;
 			}
 
-			> .inner {				.content {
+			> .inner {
+				.content {
 					display: block;
-					padding-bottom: 2em; /* Add safe bottom padding */
 
 					> * {
 						margin-left: 0;
