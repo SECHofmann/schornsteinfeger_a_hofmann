@@ -6,23 +6,23 @@
 
 /* Banner */
 
-	#banner {		
-		@include vendor('align-items', 'flex-start');
+	#banner {
+		@include vendor('align-items', 'center');
 		@include vendor('background-image', 'url("../images/banner.jpg")');
 		@include vendor('display', 'flex');
+		@include padding(4em, 0, (2em, 0, 0, 0));
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		border-bottom: 0 !important;
-		cursor: default;						
-		height: 100dvh;
-		min-height: 100dvh;
-		display: flex;
-		align-items: center;
+		cursor: default;
+		height: 60vh;
+		margin-bottom: -3.25em;
+		max-height: 32em;
+		min-height: 22em;
 		position: relative;
-		margin-bottom: 0;
-		top: 0;
+		top: -3.25em;
 
 		&:after {
 			@include vendor('transition', 'opacity #{_duration(banner)} ease');
@@ -43,7 +43,7 @@
 		h1 {
 			font-size: 3.25em;
 		}
-		
+
 		> .inner {
 			@include vendor('transition', (
 				'opacity 1.5s ease',
@@ -54,7 +54,6 @@
 			padding: 0 !important;
 			position: relative;
 			z-index: 2;
-			margin-top: 2em;
 
 			.image {
 				display: none;
@@ -94,10 +93,11 @@
 				}
 			}
 		}
-		
+
 		&.major {
-			height: 100dvh;
-			min-height: 100dvh;
+			height: 75vh;
+			min-height: 30em;
+			max-height: 50em;
 
 			&.alt {
 				  opacity: 0.75;
@@ -127,12 +127,13 @@
 			background-attachment: scroll;
 		}
 
-
-		@include breakpoint(small) {			
-			height: 100dvh;
-			min-height: 100dvh;
-			margin-bottom: 0;
-			top: 0;
+		@include breakpoint(small) {
+			@include padding(3em, 0, (2em, 0, 0, 0));
+			height: auto;
+			margin-bottom: -2.75em;
+			max-height: none;
+			min-height: 0;
+			top: -2.75em;
 
 			h1 {
 				font-size: 2em;
@@ -147,12 +148,17 @@
 						margin-bottom: _size(element-margin);
 					}
 				}
-			}			
-			
-			
+			}
+
+			&.major {
+				height: auto;
+				min-height: 0;
+				max-height: none;
+			}
 		}
 
 		@include breakpoint(xsmall) {
+			@include padding(4em, 0, (2em, 0, 0, 0));
 
 			> .inner {
 				.content {
@@ -162,11 +168,10 @@
 						}
 					}
 				}
-			}			
-			
-			&.major {				
-				height: 100dvh !important;
-				min-height: 100dvh !important;
+			}
+
+			&.major {
+				@include padding(6em, 0, (2em, 0, 0, 0));
 			}
 		}
 	}
