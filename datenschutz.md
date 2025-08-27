@@ -22,6 +22,11 @@ Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website 
 Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.
 Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden.
 
+### Analyse-Tools und Tools von Drittanbietern
+####  Datenverarbeitung durch Formspree ####
+
+Bei der Benutzung des Kontaktformulars werden die von Ihnen übermittelten Daten vom externen Anbieter Formspree.io gesammelt und unterliegen dessen Datenschutzerklärung. Beachten Sie, dass Formspree.io nur die 100 zuletzt gesendeten Nachrichten speichert. Danach werden die Nachrichten gelöscht. Formspree.io verwendet Sendgrid.com zur Übermittlung von Emails an info@schornsteinfegermeister-hofmann.de. Weitere Informationen und Widerspruchsmöglichkeiten finden sich in der Datenschutzerklärung von Formspree.io: http://docs.formspree.io/files/privacy.pdf. Wenn Sie uns ohne Verwendung dieser Drittanbieter kontaktieren wollen, können Sie uns eine Email an info@schornsteinfegermeister-hofmann.de schreiben.
+
 ---
 
 ## 2. Hosting
@@ -94,12 +99,13 @@ Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Si
 
 ### Server-Log-Dateien ###
 Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:
-Browsertyp und Browserversion
-verwendetes Betriebssystem
-Referrer URL
-Hostname des zugreifenden Rechners
-Uhrzeit der Serveranfrage
-IP-Adresse
+Browsertyp und Browserversion,
+verwendetes Betriebssystem,
+Referrer URL,
+Hostname des zugreifenden Rechners,
+Uhrzeit der Serveranfrage,
+IP-Adresse.
+
 Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.
 Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der technisch fehlerfreien Darstellung und der Optimierung seiner Website – hierzu müssen die Server-Log-Files erfasst werden.
 
@@ -113,9 +119,6 @@ Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage in
 Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde; die Einwilligung ist jederzeit widerrufbar.
 Die von Ihnen an uns per Kontaktanfragen übersandten Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihres Anliegens). Zwingende gesetzliche Bestimmungen – insbesondere gesetzliche Aufbewahrungsfristen – bleiben unberührt.
 
-
-### Formspree ###
-Wir nutzen Formspree, um die Daten aus unseren Kontaktformularen zu verarbeiten. Die von Dir eingegebenen Daten(Vornamen, Nachname, Adresse, Telefonnummer, E-Mail, Nachricht) werden per E-Mail an uns gesendet. Formspree speichert diese Daten nicht. Wir verwenden die Daten ausschließlich, um Deine Anfrage zu bearbeiten und mit Dir in Kontakt zu treten. Du hast das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Deiner Daten. Bitte kontaktiere uns unter info@schornsteinfegermeister-hofmann.de, um Deine Rechte auszuüben.
 
 
 
