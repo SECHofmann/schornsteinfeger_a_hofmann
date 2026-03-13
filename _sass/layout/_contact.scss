@@ -13,7 +13,7 @@
 		.contact-method {
 			.phone-numbers {
 				display: grid;
-				grid-template-columns: 5em 1fr;
+				grid-template-columns: max-content 1fr;
 				gap: 0.5em;
 				
 				span {
@@ -26,7 +26,7 @@
 				}
 
 				@include breakpoint(small) {
-					grid-template-columns: 4.5em 1fr;
+					grid-template-columns: max-content 1fr;
 					gap: 0.3em;
 				}
 			}
@@ -77,15 +77,15 @@
 		.contact-method {
 			.phone-numbers {
 				display: grid;
-				grid-template-columns: 5em auto;
-				gap: 0.5em;
+				grid-template-columns: max-content auto;
+				gap: 0.5em 0.65em;
 
 				span {
 					color: inherit;
 				}
 
 				@include breakpoint(small) {
-					grid-template-columns: 4.5em auto;
+					grid-template-columns: max-content auto;
 					gap: 0.3em;
 				}
 			}
