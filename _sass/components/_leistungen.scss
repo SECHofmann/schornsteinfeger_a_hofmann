@@ -30,34 +30,30 @@
       margin-top: 2em;
 
       @include breakpoint(medium) {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      @include breakpoint(small) {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr
       }
     }
 
     .sub-topic {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
       background: linear-gradient(135deg, rgba(244,244,255,0.1), rgba(244,244,255,0.05));
       padding: 1.5em;
       border-radius: _size(border-radius);
       border: solid 1px _palette(border);
       transition: transform _duration(transition);
-      display: flex;
-      flex-direction: column;
-      height: 100%;
 
-      h3 {
-        margin-top: 0;
-        margin-bottom: 1em;
-        flex: 0 0 auto;
+      .tile-heading {
+        min-height: 145px;
+        @include breakpoint(medium) {
+          min-height: auto;
+        } 
       }
-
+      
       .description {
-        flex: 1 1 auto;
-        overflow: visible;
-        margin-bottom: 1em;
+        margin-bottom: auto;
 
         ul {
           margin: 0;
