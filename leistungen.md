@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Leistungen
+title: leistungen
 nav-menu: true
 ---
 
