@@ -1,0 +1,94 @@
+// Leistungen page grid styles
+
+.leistungen-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  margin-top: 2em;
+
+  .topic {
+    background: _palette(border-bg);
+    padding: 2em;
+    border-radius: _size(border-radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    &:first-child {
+      grid-column: 1 / -1;
+      padding: 3em;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+  }
+
+  .main-topic {
+    .sub-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1.5em;
+      margin-top: 2em;
+
+      @include breakpoint(medium) {
+        grid-template-columns: 1fr
+      }
+    }
+
+    .sub-topic {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      background: linear-gradient(135deg, rgba(244,244,255,0.1), rgba(244,244,255,0.05));
+      padding: 1.5em;
+      border-radius: _size(border-radius);
+      border: solid 1px _palette(border);
+      transition: transform _duration(transition);
+
+      .tile-heading {
+        min-height: 145px;
+        @include breakpoint(medium) {
+          min-height: auto;
+        } 
+      }
+      
+      .description {
+        margin-bottom: auto;
+
+        ul {
+          margin: 0;
+          padding-left: 1.5em;
+
+          li {
+            margin-bottom: 0.5em;
+          }
+        }
+      }
+    }
+  }
+
+  @include breakpoint(medium) {
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+
+    .topic {
+      padding: 1.5em;
+
+      &:first-child {
+        padding: 2em;
+      }
+    }
+  }
+
+  @include breakpoint(small) {
+    gap: 1em;
+
+    .topic {
+      padding: 1em;
+
+      &:first-child {
+        padding: 1.5em;
+      }
+    }
+  }
+}
